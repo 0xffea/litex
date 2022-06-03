@@ -1,0 +1,45 @@
+diff --git a/litex/soc/cores/cpu/vexriscv/core.py b/litex/soc/cores/cpu/vexriscv/core.py
+index ffea0552..88ecb78a 100644
+--- a/litex/soc/cores/cpu/vexriscv/core.py
++++ b/litex/soc/cores/cpu/vexriscv/core.py
+@@ -53,23 +53,23 @@ GCC_FLAGS = {
+     #                               ||||/--- Single-Precision Floating-Point
+     #                               |||||/-- Double-Precision Floating-Point
+     #                               imacfd
+-    "minimal":          "-march=rv32i      -mabi=ilp32",
+-    "minimal+debug":    "-march=rv32i      -mabi=ilp32",
+-    "lite":             "-march=rv32im     -mabi=ilp32",
+-    "lite+debug":       "-march=rv32im     -mabi=ilp32",
+-    "standard":         "-march=rv32im     -mabi=ilp32",
+-    "standard+debug":   "-march=rv32im     -mabi=ilp32",
+-    "imac":             "-march=rv32imac   -mabi=ilp32",
+-    "imac+debug":       "-march=rv32imac   -mabi=ilp32",
+-    "full":             "-march=rv32im     -mabi=ilp32",
+-    "full+cfu":         "-march=rv32im     -mabi=ilp32",
+-    "full+debug":       "-march=rv32im     -mabi=ilp32",
+-    "full+cfu+debug":   "-march=rv32im     -mabi=ilp32",
+-    "linux":            "-march=rv32ima    -mabi=ilp32",
+-    "linux+debug":      "-march=rv32ima    -mabi=ilp32",
+-    "linux+no-dsp":     "-march=rv32ima    -mabi=ilp32",
+-    "secure":           "-march=rv32ima    -mabi=ilp32",
+-    "secure+debug":     "-march=rv32ima    -mabi=ilp32",
++    "minimal":          "-march=rv32i_zicsr      -mabi=ilp32",
++    "minimal+debug":    "-march=rv32i_zicsr      -mabi=ilp32",
++    "lite":             "-march=rv32im_zicsr     -mabi=ilp32",
++    "lite+debug":       "-march=rv32im_zicsr     -mabi=ilp32",
++    "standard":         "-march=rv32im_zicsr     -mabi=ilp32",
++    "standard+debug":   "-march=rv32im_zicsr     -mabi=ilp32",
++    "imac":             "-march=rv32imac_zicsr   -mabi=ilp32",
++    "imac+debug":       "-march=rv32imac_zicsr   -mabi=ilp32",
++    "full":             "-march=rv32im_zicsr     -mabi=ilp32",
++    "full+cfu":         "-march=rv32im_zicsr     -mabi=ilp32",
++    "full+debug":       "-march=rv32im_zicsr     -mabi=ilp32",
++    "full+cfu+debug":   "-march=rv32im_zicsr     -mabi=ilp32",
++    "linux":            "-march=rv32ima_zicsr    -mabi=ilp32",
++    "linux+debug":      "-march=rv32ima_zicsr    -mabi=ilp32",
++    "linux+no-dsp":     "-march=rv32ima_zicsr    -mabi=ilp32",
++    "secure":           "-march=rv32ima_zicsr    -mabi=ilp32",
++    "secure+debug":     "-march=rv32ima_zicsr    -mabi=ilp32",
+ }
+ 
+ # VexRiscv Timer -----------------------------------------------------------------------------------
